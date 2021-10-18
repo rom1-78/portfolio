@@ -1,0 +1,259 @@
+body
+	{
+		font-family: verdana, calibri, sans-serif;
+		margin: 0px;
+		padding: 0px;
+		background-color: #de7c7c;
+	}
+
+header
+	{
+		text-align: center;
+		background-color: #424558;
+		padding: 10px;
+		margin: 10px;
+		border-radius: 20px;
+	}
+
+.s1
+	{
+		margin: 10px;
+		padding: 10px;
+		width: 15%;
+		height: 700px;
+		float: left;
+		border: 1px solid black;
+	}
+
+.s2
+	{
+		width: 75%;
+		height: 700px;
+		float: right;
+		border: 1px solid black;
+		margin: 10px;
+		padding: 10px;
+	}
+
+
+iframe
+	{
+		margin-right: 20px;
+		height: 650px;
+		width: 100%;
+	}
+
+.f2
+	{
+		margin-right: 20px;
+		height: 650px;
+		width: 70%;
+	}
+
+img
+	{
+		height: 200px;
+		width: 200px;
+		float: right;
+	}
+
+footer
+	{
+		text-align: center;
+		background-color: #424558;
+		clear: both;
+		position: relative;
+		padding: 10px;
+		margin: 10px;
+		border-radius: 20px;
+	}
+
+nav > ul
+	{
+		margin: 0px;
+		padding: 0px;
+	}
+
+nav li
+	{
+		list-style-type: none;
+	}
+
+.submenu
+	{
+		display: none;
+	}
+
+nav input[type=checkbox]
+	{
+		display: none;
+	}
+
+.menu-mobile
+	{
+		display: none;
+	}
+
+nav
+	{
+		width: 100%;
+		background-color: #424558;
+	}
+
+nav > ul::after
+	{
+		content: "";
+		display: table;
+		clear: both;
+	}
+
+nav a
+	{
+		display: inline-block;
+		text-decoration: none;
+	}
+
+nav > ul > li > a
+	{
+		padding: 20px 30px;
+		color: #FFF;
+	}
+
+nav li:hover .submenu
+	{
+		display: inline-block;
+		position: absolute;
+		top: 100%;
+		left: 0px;
+		padding: 0px;
+		z-index: 100000;
+	}
+
+.submenu li
+	{
+		border-bottom: 1px solid #CCC;	
+	}
+
+.submenu li a
+	{
+		padding: 15px 30px;
+		font-size: 13px;
+		color: #222538;
+		width: 270px;
+	}
+
+.menu-accueil:hover
+	{
+		border-top: 5px solid #e44d26;
+		background-color: RGBa(228, 77, 38, 0.15);
+	}
+
+.menu-cv:hover
+	{
+		border-top: 5px solid #0070bb;
+		background-color: RGBa(000, 112, 192, 0.15);
+	}
+
+.menu-projet:hover
+	{
+		border-top: 5px solid #f1dc4f;
+		background-color: RGBa(241, 211, 79, 0.15);
+	}
+
+.menu-veilles:hover
+	{
+		border-top: 5px solid #f1dc4f;
+		background-color: RGBa(50, 209, 76 0.15);
+	}
+
+.menu-contact:hover
+	{
+		border-top: 5px solid #BBB;
+		background-color: RGB(220, 220, 220, 0.15);
+	}
+
+nav > ul > li:hover a 
+	{
+		padding: 15px 30px 20px 30px;
+	}
+
+.menu-projet .submenu
+	{
+		background-color: RGB(251, 216, 99);
+	}
+
+.menu-veilles .submenu
+	{
+		background-color: RGB(55, 234, 85);
+	}
+
+.submenu li:hover a
+	{
+		color: #EEE;
+		font-weight: bold;
+	}
+
+.menu-porjet .submenu li:hover
+	{
+		background-color: RGB(200, 165, 75);
+	}
+
+.menu-veilles .submenu li:hover
+	{
+		background-color: RGB(45, 249, 79);
+	}
+
+nav input[type=checkbox]:checked ~ ul
+	{
+		display: block;
+	}
+
+@media screen and (max-width : 680px)
+	{
+		.menu-mobile
+		{
+			display: block;
+			color: #FFF;
+			background-color: rgba(29, 197, 151, 0.97);
+			text-align: center;
+			padding:  12px 0;
+		}
+	nav ul
+		{
+			display: none;
+		}
+	}
+
+@media screen and (max-width : 680px)
+	{
+	.menu-mobile
+		{
+			display:  block;
+			color: #FFF;
+			background-color: rgba(29, 197, 151, 0.97);
+			text-align: center;
+			padding: 12px 0;
+		}
+	nav ul
+		{
+		display: none;
+		}
+	}
+
+nav ul li, nav ul li a 
+	{
+		width: 100%;
+		text-align: center;
+	}
+
+nav ul li a, nav ul li:hover a 
+	{
+		padding: 10px 0px 10px 0px;
+	}
+
+nav li:hover .submenu
+	{
+		display: block;
+		position: static;
+	}
+}
